@@ -8,6 +8,8 @@ import (
 	_ "github.com/lib/pq"
 )
 
+var Port string = "8080"
+
 func InitTimeZone() {
 	ict, err := time.LoadLocation("Asia/Bangkok")
 	if err != nil {
