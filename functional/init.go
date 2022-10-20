@@ -20,11 +20,11 @@ func InitTimeZone() {
 
 func InitDatabase() *sqlx.DB {
 	driver := "postgres"
-	username := "posgres"
+	username := "postgres"
 	password := "ppapppap"
 	host := "localhost"
 	database := "restdbtest"
-	db, err := sqlx.Open(driver, fmt.Sprintf("%v://%v:%v@%v/%v",
+	db, err := sqlx.Open(driver, fmt.Sprintf("%v://%v:%v@%v/%v?sslmode=disable",
 		driver,
 		username,
 		password,
