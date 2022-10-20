@@ -2,6 +2,8 @@ package functional
 
 import (
 	"fmt"
+	"log"
+	"runtime"
 	"time"
 
 	"github.com/jmoiron/sqlx"
@@ -38,4 +40,8 @@ func InitDatabase() *sqlx.DB {
 	db.SetMaxOpenConns(12)
 	db.SetMaxIdleConns(12)
 	return db
+}
+func Log(err error) {
+	_, _, line, _ := runtime.Caller(1)
+	log.Printf("%v :line %v", err, line)
 }
