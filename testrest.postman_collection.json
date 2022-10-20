@@ -1,0 +1,347 @@
+{
+	"info": {
+		"_postman_id": "c2c08a6e-9c44-4f6a-9589-a9091d4f61de",
+		"name": "testrest",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23975144"
+	},
+	"item": [
+		{
+			"name": "Product",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/products?gendor=women&style=fig&size=xl",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"products"
+					],
+					"query": [
+						{
+							"key": "gendor",
+							"value": "women"
+						},
+						{
+							"key": "style",
+							"value": "fig"
+						},
+						{
+							"key": "size",
+							"value": "xl"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "allProduct",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/products",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"products"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 20 Oct 2022 15:18:16 GMT"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"Product_No\": \"2211\",\n        \"Gendor\": \"women\",\n        \"Size\": \"S\",\n        \"Style\": \"Plain color Red\",\n        \"Price\": 375\n    },\n    {\n        \"Product_No\": \"1211\",\n        \"Gendor\": \"men\",\n        \"Size\": \"S\",\n        \"Style\": \"Plain color Red\",\n        \"Price\": 370\n    },\n    {\n        \"Product_No\": \"2212\",\n        \"Gendor\": \"women\",\n        \"Size\": \"S\",\n        \"Style\": \"Plain color Black\",\n        \"Price\": 375\n    },\n    {\n        \"Product_No\": \"1212\",\n        \"Gendor\": \"men\",\n        \"Size\": \"S\",\n        \"Style\": \"Plain color Black\",\n        \"Price\": 370\n    },\n    {\n        \"Product_No\": \"2213\",\n        \"Gendor\": \"women\",\n        \"Size\": \"S\",\n        \"Style\": \"Plain color Green\",\n        \"Price\": 375\n    },\n    {\n        \"Product_No\": \"1213\",\n        \"Gendor\": \"men\",\n        \"Size\": \"S\",\n        \"Style\": \"Plain color Green\",\n        \"Price\": 370\n    },\n    {\n        \"Product_No\": \"2237\",\n        \"Gendor\": \"women\",\n        \"Size\": \"S\",\n        \"Style\": \"Figures Batman\",\n        \"Price\": 445\n    },\n    {\n        \"Product_No\": \"1237\",\n        \"Gendor\": \"men\",\n        \"Size\": \"S\",\n        \"Style\": \"Figures Batman\",\n        \"Price\": 440\n    },\n    {\n        \"Product_No\": \"2238\",\n        \"Gendor\": \"women\",\n        \"Size\": \"S\",\n        \"Style\": \"Figures Iron Man\",\n        \"Price\": 445\n    },\n    {\n        \"Product_No\": \"1238\",\n        \"Gendor\": \"men\",\n        \"Size\": \"S\",\n        \"Style\": \"Figures Iron Man\",\n        \"Price\": 440\n    },\n    {\n        \"Product_No\": \"2239\",\n        \"Gendor\": \"women\",\n        \"Size\": \"S\",\n        \"Style\": \"Figures Spiderman\",\n        \"Price\": 445\n    },\n    {\n        \"Product_No\": \"1239\",\n        \"Gendor\": \"men\",\n        \"Size\": \"S\",\n        \"Style\": \"Figures Spiderman\",\n        \"Price\": 440\n    },\n    {\n        \"Product_No\": \"2111\",\n        \"Gendor\": \"women\",\n        \"Size\": \"XS\",\n        \"Style\": \"Plain color Red\",\n        \"Price\": 325\n    },\n    {\n        \"Product_No\": \"1111\",\n        \"Gendor\": \"men\",\n        \"Size\": \"XS\",\n        \"Style\": \"Plain color Red\",\n        \"Price\": 320\n    },\n    {\n        \"Product_No\": \"2112\",\n        \"Gendor\": \"women\",\n        \"Size\": \"XS\",\n        \"Style\": \"Plain color Black\",\n        \"Price\": 325\n    },\n    {\n        \"Product_No\": \"1112\",\n        \"Gendor\": \"men\",\n        \"Size\": \"XS\",\n        \"Style\": \"Plain color Black\",\n        \"Price\": 320\n    },\n    {\n        \"Product_No\": \"2113\",\n        \"Gendor\": \"women\",\n        \"Size\": \"XS\",\n        \"Style\": \"Plain color Green\",\n        \"Price\": 325\n    },\n    {\n        \"Product_No\": \"1113\",\n        \"Gendor\": \"men\",\n        \"Size\": \"XS\",\n        \"Style\": \"Plain color Green\",\n        \"Price\": 320\n    },\n    {\n        \"Product_No\": \"2137\",\n        \"Gendor\": \"women\",\n        \"Size\": \"XS\",\n        \"Style\": \"Figures Batman\",\n        \"Price\": 395\n    },\n    {\n        \"Product_No\": \"1137\",\n        \"Gendor\": \"men\",\n        \"Size\": \"XS\",\n        \"Style\": \"Figures Batman\",\n        \"Price\": 390\n    },\n    {\n        \"Product_No\": \"2138\",\n        \"Gendor\": \"women\",\n        \"Size\": \"XS\",\n        \"Style\": \"Figures Iron Man\",\n        \"Price\": 395\n    },\n    {\n        \"Product_No\": \"1138\",\n        \"Gendor\": \"men\",\n        \"Size\": \"XS\",\n        \"Style\": \"Figures Iron Man\",\n        \"Price\": 390\n    },\n    {\n        \"Product_No\": \"2139\",\n        \"Gendor\": \"women\",\n        \"Size\": \"XS\",\n        \"Style\": \"Figures Spiderman\",\n        \"Price\": 395\n    },\n    {\n        \"Product_No\": \"1139\",\n        \"Gendor\": \"men\",\n        \"Size\": \"XS\",\n        \"Style\": \"Figures Spiderman\",\n        \"Price\": 390\n    },\n    {\n        \"Product_No\": \"2311\",\n        \"Gendor\": \"women\",\n        \"Size\": \"M\",\n        \"Style\": \"Plain color Red\",\n        \"Price\": 400\n    },\n    {\n        \"Product_No\": \"1311\",\n        \"Gendor\": \"men\",\n        \"Size\": \"M\",\n        \"Style\": \"Plain color Red\",\n        \"Price\": 395\n    },\n    {\n        \"Product_No\": \"2312\",\n        \"Gendor\": \"women\",\n        \"Size\": \"M\",\n        \"Style\": \"Plain color Black\",\n        \"Price\": 400\n    },\n    {\n        \"Product_No\": \"1312\",\n        \"Gendor\": \"men\",\n        \"Size\": \"M\",\n        \"Style\": \"Plain color Black\",\n        \"Price\": 395\n    },\n    {\n        \"Product_No\": \"2313\",\n        \"Gendor\": \"women\",\n        \"Size\": \"M\",\n        \"Style\": \"Plain color Green\",\n        \"Price\": 400\n    },\n    {\n        \"Product_No\": \"1313\",\n        \"Gendor\": \"men\",\n        \"Size\": \"M\",\n        \"Style\": \"Plain color Green\",\n        \"Price\": 395\n    },\n    {\n        \"Product_No\": \"2337\",\n        \"Gendor\": \"women\",\n        \"Size\": \"M\",\n        \"Style\": \"Figures Batman\",\n        \"Price\": 470\n    },\n    {\n        \"Product_No\": \"1337\",\n        \"Gendor\": \"men\",\n        \"Size\": \"M\",\n        \"Style\": \"Figures Batman\",\n        \"Price\": 465\n    },\n    {\n        \"Product_No\": \"2338\",\n        \"Gendor\": \"women\",\n        \"Size\": \"M\",\n        \"Style\": \"Figures Iron Man\",\n        \"Price\": 470\n    },\n    {\n        \"Product_No\": \"1338\",\n        \"Gendor\": \"men\",\n        \"Size\": \"M\",\n        \"Style\": \"Figures Iron Man\",\n        \"Price\": 465\n    },\n    {\n        \"Product_No\": \"2339\",\n        \"Gendor\": \"women\",\n        \"Size\": \"M\",\n        \"Style\": \"Figures Spiderman\",\n        \"Price\": 470\n    },\n    {\n        \"Product_No\": \"1339\",\n        \"Gendor\": \"men\",\n        \"Size\": \"M\",\n        \"Style\": \"Figures Spiderman\",\n        \"Price\": 465\n    },\n    {\n        \"Product_No\": \"2411\",\n        \"Gendor\": \"women\",\n        \"Size\": \"L\",\n        \"Style\": \"Plain color Red\",\n        \"Price\": 425\n    },\n    {\n        \"Product_No\": \"1411\",\n        \"Gendor\": \"men\",\n        \"Size\": \"L\",\n        \"Style\": \"Plain color Red\",\n        \"Price\": 420\n    },\n    {\n        \"Product_No\": \"2412\",\n        \"Gendor\": \"women\",\n        \"Size\": \"L\",\n        \"Style\": \"Plain color Black\",\n        \"Price\": 425\n    },\n    {\n        \"Product_No\": \"1412\",\n        \"Gendor\": \"men\",\n        \"Size\": \"L\",\n        \"Style\": \"Plain color Black\",\n        \"Price\": 420\n    },\n    {\n        \"Product_No\": \"2413\",\n        \"Gendor\": \"women\",\n        \"Size\": \"L\",\n        \"Style\": \"Plain color Green\",\n        \"Price\": 425\n    },\n    {\n        \"Product_No\": \"1413\",\n        \"Gendor\": \"men\",\n        \"Size\": \"L\",\n        \"Style\": \"Plain color Green\",\n        \"Price\": 420\n    },\n    {\n        \"Product_No\": \"2437\",\n        \"Gendor\": \"women\",\n        \"Size\": \"L\",\n        \"Style\": \"Figures Batman\",\n        \"Price\": 495\n    },\n    {\n        \"Product_No\": \"1437\",\n        \"Gendor\": \"men\",\n        \"Size\": \"L\",\n        \"Style\": \"Figures Batman\",\n        \"Price\": 490\n    },\n    {\n        \"Product_No\": \"2438\",\n        \"Gendor\": \"women\",\n        \"Size\": \"L\",\n        \"Style\": \"Figures Iron Man\",\n        \"Price\": 495\n    },\n    {\n        \"Product_No\": \"1438\",\n        \"Gendor\": \"men\",\n        \"Size\": \"L\",\n        \"Style\": \"Figures Iron Man\",\n        \"Price\": 490\n    },\n    {\n        \"Product_No\": \"2439\",\n        \"Gendor\": \"women\",\n        \"Size\": \"L\",\n        \"Style\": \"Figures Spiderman\",\n        \"Price\": 495\n    },\n    {\n        \"Product_No\": \"1439\",\n        \"Gendor\": \"men\",\n        \"Size\": \"L\",\n        \"Style\": \"Figures Spiderman\",\n        \"Price\": 490\n    },\n    {\n        \"Product_No\": \"2511\",\n        \"Gendor\": \"women\",\n        \"Size\": \"XL\",\n        \"Style\": \"Plain color Red\",\n        \"Price\": 475\n    },\n    {\n        \"Product_No\": \"1511\",\n        \"Gendor\": \"men\",\n        \"Size\": \"XL\",\n        \"Style\": \"Plain color Red\",\n        \"Price\": 470\n    },\n    {\n        \"Product_No\": \"2512\",\n        \"Gendor\": \"women\",\n        \"Size\": \"XL\",\n        \"Style\": \"Plain color Black\",\n        \"Price\": 475\n    },\n    {\n        \"Product_No\": \"1512\",\n        \"Gendor\": \"men\",\n        \"Size\": \"XL\",\n        \"Style\": \"Plain color Black\",\n        \"Price\": 470\n    },\n    {\n        \"Product_No\": \"2513\",\n        \"Gendor\": \"women\",\n        \"Size\": \"XL\",\n        \"Style\": \"Plain color Green\",\n        \"Price\": 475\n    },\n    {\n        \"Product_No\": \"1513\",\n        \"Gendor\": \"men\",\n        \"Size\": \"XL\",\n        \"Style\": \"Plain color Green\",\n        \"Price\": 470\n    },\n    {\n        \"Product_No\": \"2537\",\n        \"Gendor\": \"women\",\n        \"Size\": \"XL\",\n        \"Style\": \"Figures Batman\",\n        \"Price\": 545\n    },\n    {\n        \"Product_No\": \"1537\",\n        \"Gendor\": \"men\",\n        \"Size\": \"XL\",\n        \"Style\": \"Figures Batman\",\n        \"Price\": 540\n    },\n    {\n        \"Product_No\": \"2538\",\n        \"Gendor\": \"women\",\n        \"Size\": \"XL\",\n        \"Style\": \"Figures Iron Man\",\n        \"Price\": 545\n    },\n    {\n        \"Product_No\": \"1538\",\n        \"Gendor\": \"men\",\n        \"Size\": \"XL\",\n        \"Style\": \"Figures Iron Man\",\n        \"Price\": 540\n    },\n    {\n        \"Product_No\": \"2539\",\n        \"Gendor\": \"women\",\n        \"Size\": \"XL\",\n        \"Style\": \"Figures Spiderman\",\n        \"Price\": 545\n    },\n    {\n        \"Product_No\": \"1539\",\n        \"Gendor\": \"men\",\n        \"Size\": \"XL\",\n        \"Style\": \"Figures Spiderman\",\n        \"Price\": 540\n    },\n    {\n        \"Product_No\": \"2224\",\n        \"Gendor\": \"women\",\n        \"Size\": \"S\",\n        \"Style\": \"Patterns dots\",\n        \"Price\": 400\n    },\n    {\n        \"Product_No\": \"1224\",\n        \"Gendor\": \"men\",\n        \"Size\": \"S\",\n        \"Style\": \"Patterns dots\",\n        \"Price\": 395\n    },\n    {\n        \"Product_No\": \"2225\",\n        \"Gendor\": \"women\",\n        \"Size\": \"S\",\n        \"Style\": \"Patterns drawing\",\n        \"Price\": 400\n    },\n    {\n        \"Product_No\": \"1225\",\n        \"Gendor\": \"men\",\n        \"Size\": \"S\",\n        \"Style\": \"Patterns drawing\",\n        \"Price\": 395\n    },\n    {\n        \"Product_No\": \"2226\",\n        \"Gendor\": \"women\",\n        \"Size\": \"S\",\n        \"Style\": \"Patterns calligraphy\",\n        \"Price\": 400\n    },\n    {\n        \"Product_No\": \"1226\",\n        \"Gendor\": \"men\",\n        \"Size\": \"S\",\n        \"Style\": \"Patterns calligraphy\",\n        \"Price\": 395\n    },\n    {\n        \"Product_No\": \"2124\",\n        \"Gendor\": \"women\",\n        \"Size\": \"XS\",\n        \"Style\": \"Patterns dots\",\n        \"Price\": 350\n    },\n    {\n        \"Product_No\": \"1124\",\n        \"Gendor\": \"men\",\n        \"Size\": \"XS\",\n        \"Style\": \"Patterns dots\",\n        \"Price\": 345\n    },\n    {\n        \"Product_No\": \"2125\",\n        \"Gendor\": \"women\",\n        \"Size\": \"XS\",\n        \"Style\": \"Patterns drawing\",\n        \"Price\": 350\n    },\n    {\n        \"Product_No\": \"1125\",\n        \"Gendor\": \"men\",\n        \"Size\": \"XS\",\n        \"Style\": \"Patterns drawing\",\n        \"Price\": 345\n    },\n    {\n        \"Product_No\": \"2126\",\n        \"Gendor\": \"women\",\n        \"Size\": \"XS\",\n        \"Style\": \"Patterns calligraphy\",\n        \"Price\": 350\n    },\n    {\n        \"Product_No\": \"1126\",\n        \"Gendor\": \"men\",\n        \"Size\": \"XS\",\n        \"Style\": \"Patterns calligraphy\",\n        \"Price\": 345\n    },\n    {\n        \"Product_No\": \"2324\",\n        \"Gendor\": \"women\",\n        \"Size\": \"M\",\n        \"Style\": \"Patterns dots\",\n        \"Price\": 425\n    },\n    {\n        \"Product_No\": \"1324\",\n        \"Gendor\": \"men\",\n        \"Size\": \"M\",\n        \"Style\": \"Patterns dots\",\n        \"Price\": 420\n    },\n    {\n        \"Product_No\": \"2325\",\n        \"Gendor\": \"women\",\n        \"Size\": \"M\",\n        \"Style\": \"Patterns drawing\",\n        \"Price\": 425\n    },\n    {\n        \"Product_No\": \"1325\",\n        \"Gendor\": \"men\",\n        \"Size\": \"M\",\n        \"Style\": \"Patterns drawing\",\n        \"Price\": 420\n    },\n    {\n        \"Product_No\": \"2326\",\n        \"Gendor\": \"women\",\n        \"Size\": \"M\",\n        \"Style\": \"Patterns calligraphy\",\n        \"Price\": 425\n    },\n    {\n        \"Product_No\": \"1326\",\n        \"Gendor\": \"men\",\n        \"Size\": \"M\",\n        \"Style\": \"Patterns calligraphy\",\n        \"Price\": 420\n    },\n    {\n        \"Product_No\": \"2424\",\n        \"Gendor\": \"women\",\n        \"Size\": \"L\",\n        \"Style\": \"Patterns dots\",\n        \"Price\": 450\n    },\n    {\n        \"Product_No\": \"1424\",\n        \"Gendor\": \"men\",\n        \"Size\": \"L\",\n        \"Style\": \"Patterns dots\",\n        \"Price\": 445\n    },\n    {\n        \"Product_No\": \"2425\",\n        \"Gendor\": \"women\",\n        \"Size\": \"L\",\n        \"Style\": \"Patterns drawing\",\n        \"Price\": 450\n    },\n    {\n        \"Product_No\": \"1425\",\n        \"Gendor\": \"men\",\n        \"Size\": \"L\",\n        \"Style\": \"Patterns drawing\",\n        \"Price\": 445\n    },\n    {\n        \"Product_No\": \"2426\",\n        \"Gendor\": \"women\",\n        \"Size\": \"L\",\n        \"Style\": \"Patterns calligraphy\",\n        \"Price\": 450\n    },\n    {\n        \"Product_No\": \"1426\",\n        \"Gendor\": \"men\",\n        \"Size\": \"L\",\n        \"Style\": \"Patterns calligraphy\",\n        \"Price\": 445\n    },\n    {\n        \"Product_No\": \"2524\",\n        \"Gendor\": \"women\",\n        \"Size\": \"XL\",\n        \"Style\": \"Patterns dots\",\n        \"Price\": 500\n    },\n    {\n        \"Product_No\": \"1524\",\n        \"Gendor\": \"men\",\n        \"Size\": \"XL\",\n        \"Style\": \"Patterns dots\",\n        \"Price\": 495\n    },\n    {\n        \"Product_No\": \"2525\",\n        \"Gendor\": \"women\",\n        \"Size\": \"XL\",\n        \"Style\": \"Patterns drawing\",\n        \"Price\": 500\n    },\n    {\n        \"Product_No\": \"1525\",\n        \"Gendor\": \"men\",\n        \"Size\": \"XL\",\n        \"Style\": \"Patterns drawing\",\n        \"Price\": 495\n    },\n    {\n        \"Product_No\": \"2526\",\n        \"Gendor\": \"women\",\n        \"Size\": \"XL\",\n        \"Style\": \"Patterns calligraphy\",\n        \"Price\": 500\n    },\n    {\n        \"Product_No\": \"1526\",\n        \"Gendor\": \"men\",\n        \"Size\": \"XL\",\n        \"Style\": \"Patterns calligraphy\",\n        \"Price\": 495\n    }\n]"
+				},
+				{
+					"name": "pageProduct",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/products?page=1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"products"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "1",
+									"description": "if thist param Row = 20"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 20 Oct 2022 15:25:14 GMT"
+						},
+						{
+							"key": "Content-Length",
+							"value": "896"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"Product_No\": \"1239\",\n        \"Gendor\": \"men\",\n        \"Size\": \"S\",\n        \"Style\": \"Figures Spiderman\",\n        \"Price\": 440\n    },\n    {\n        \"Product_No\": \"1139\",\n        \"Gendor\": \"men\",\n        \"Size\": \"XS\",\n        \"Style\": \"Figures Spiderman\",\n        \"Price\": 390\n    },\n    {\n        \"Product_No\": \"1339\",\n        \"Gendor\": \"men\",\n        \"Size\": \"M\",\n        \"Style\": \"Figures Spiderman\",\n        \"Price\": 465\n    },\n    {\n        \"Product_No\": \"1439\",\n        \"Gendor\": \"men\",\n        \"Size\": \"L\",\n        \"Style\": \"Figures Spiderman\",\n        \"Price\": 490\n    },\n    {\n        \"Product_No\": \"1539\",\n        \"Gendor\": \"men\",\n        \"Size\": \"XL\",\n        \"Style\": \"Figures Spiderman\",\n        \"Price\": 540\n    },\n    {\n        \"Product_No\": \"2239\",\n        \"Gendor\": \"women\",\n        \"Size\": \"S\",\n        \"Style\": \"Figures Spiderman\",\n        \"Price\": 445\n    },\n    {\n        \"Product_No\": \"2139\",\n        \"Gendor\": \"women\",\n        \"Size\": \"XS\",\n        \"Style\": \"Figures Spiderman\",\n        \"Price\": 395\n    },\n    {\n        \"Product_No\": \"2339\",\n        \"Gendor\": \"women\",\n        \"Size\": \"M\",\n        \"Style\": \"Figures Spiderman\",\n        \"Price\": 470\n    },\n    {\n        \"Product_No\": \"2439\",\n        \"Gendor\": \"women\",\n        \"Size\": \"L\",\n        \"Style\": \"Figures Spiderman\",\n        \"Price\": 495\n    },\n    {\n        \"Product_No\": \"2539\",\n        \"Gendor\": \"women\",\n        \"Size\": \"XL\",\n        \"Style\": \"Figures Spiderman\",\n        \"Price\": 545\n    }\n]"
+				},
+				{
+					"name": "pageAndRowProduct",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/products?page=1&row_amount=10",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"products"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "1",
+									"description": "page"
+								},
+								{
+									"key": "row_amount",
+									"value": "10",
+									"description": "amout row"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 20 Oct 2022 15:37:31 GMT"
+						},
+						{
+							"key": "Content-Length",
+							"value": "876"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"Product_No\": \"1211\",\n        \"Gendor\": \"men\",\n        \"Size\": \"S\",\n        \"Style\": \"Plain color Red\",\n        \"Price\": 370\n    },\n    {\n        \"Product_No\": \"1111\",\n        \"Gendor\": \"men\",\n        \"Size\": \"XS\",\n        \"Style\": \"Plain color Red\",\n        \"Price\": 320\n    },\n    {\n        \"Product_No\": \"1311\",\n        \"Gendor\": \"men\",\n        \"Size\": \"M\",\n        \"Style\": \"Plain color Red\",\n        \"Price\": 395\n    },\n    {\n        \"Product_No\": \"1411\",\n        \"Gendor\": \"men\",\n        \"Size\": \"L\",\n        \"Style\": \"Plain color Red\",\n        \"Price\": 420\n    },\n    {\n        \"Product_No\": \"1511\",\n        \"Gendor\": \"men\",\n        \"Size\": \"XL\",\n        \"Style\": \"Plain color Red\",\n        \"Price\": 470\n    },\n    {\n        \"Product_No\": \"2211\",\n        \"Gendor\": \"women\",\n        \"Size\": \"S\",\n        \"Style\": \"Plain color Red\",\n        \"Price\": 375\n    },\n    {\n        \"Product_No\": \"2111\",\n        \"Gendor\": \"women\",\n        \"Size\": \"XS\",\n        \"Style\": \"Plain color Red\",\n        \"Price\": 325\n    },\n    {\n        \"Product_No\": \"2311\",\n        \"Gendor\": \"women\",\n        \"Size\": \"M\",\n        \"Style\": \"Plain color Red\",\n        \"Price\": 400\n    },\n    {\n        \"Product_No\": \"2411\",\n        \"Gendor\": \"women\",\n        \"Size\": \"L\",\n        \"Style\": \"Plain color Red\",\n        \"Price\": 425\n    },\n    {\n        \"Product_No\": \"2511\",\n        \"Gendor\": \"women\",\n        \"Size\": \"XL\",\n        \"Style\": \"Plain color Red\",\n        \"Price\": 475\n    }\n]"
+				},
+				{
+					"name": "filterProductByGendor",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/products?gendor=women",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"products"
+							],
+							"query": [
+								{
+									"key": "gendor",
+									"value": "women"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 20 Oct 2022 15:40:38 GMT"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"Product_No\": \"2111\",\n        \"Gendor\": \"women\",\n        \"Size\": \"XS\",\n        \"Style\": \"Plain color Red\",\n        \"Price\": 325\n    },\n    {\n        \"Product_No\": \"2112\",\n        \"Gendor\": \"women\",\n        \"Size\": \"XS\",\n        \"Style\": \"Plain color Black\",\n        \"Price\": 325\n    },\n    {\n        \"Product_No\": \"2113\",\n        \"Gendor\": \"women\",\n        \"Size\": \"XS\",\n        \"Style\": \"Plain color Green\",\n        \"Price\": 325\n    },\n    {\n        \"Product_No\": \"2124\",\n        \"Gendor\": \"women\",\n        \"Size\": \"XS\",\n        \"Style\": \"Patterns dots\",\n        \"Price\": 350\n    },\n    {\n        \"Product_No\": \"2125\",\n        \"Gendor\": \"women\",\n        \"Size\": \"XS\",\n        \"Style\": \"Patterns drawing\",\n        \"Price\": 350\n    },\n    {\n        \"Product_No\": \"2126\",\n        \"Gendor\": \"women\",\n        \"Size\": \"XS\",\n        \"Style\": \"Patterns calligraphy\",\n        \"Price\": 350\n    },\n    {\n        \"Product_No\": \"2137\",\n        \"Gendor\": \"women\",\n        \"Size\": \"XS\",\n        \"Style\": \"Figures Batman\",\n        \"Price\": 395\n    },\n    {\n        \"Product_No\": \"2138\",\n        \"Gendor\": \"women\",\n        \"Size\": \"XS\",\n        \"Style\": \"Figures Iron Man\",\n        \"Price\": 395\n    },\n    {\n        \"Product_No\": \"2139\",\n        \"Gendor\": \"women\",\n        \"Size\": \"XS\",\n        \"Style\": \"Figures Spiderman\",\n        \"Price\": 395\n    },\n    {\n        \"Product_No\": \"2211\",\n        \"Gendor\": \"women\",\n        \"Size\": \"S\",\n        \"Style\": \"Plain color Red\",\n        \"Price\": 375\n    },\n    {\n        \"Product_No\": \"2212\",\n        \"Gendor\": \"women\",\n        \"Size\": \"S\",\n        \"Style\": \"Plain color Black\",\n        \"Price\": 375\n    },\n    {\n        \"Product_No\": \"2213\",\n        \"Gendor\": \"women\",\n        \"Size\": \"S\",\n        \"Style\": \"Plain color Green\",\n        \"Price\": 375\n    },\n    {\n        \"Product_No\": \"2224\",\n        \"Gendor\": \"women\",\n        \"Size\": \"S\",\n        \"Style\": \"Patterns dots\",\n        \"Price\": 400\n    },\n    {\n        \"Product_No\": \"2225\",\n        \"Gendor\": \"women\",\n        \"Size\": \"S\",\n        \"Style\": \"Patterns drawing\",\n        \"Price\": 400\n    },\n    {\n        \"Product_No\": \"2226\",\n        \"Gendor\": \"women\",\n        \"Size\": \"S\",\n        \"Style\": \"Patterns calligraphy\",\n        \"Price\": 400\n    },\n    {\n        \"Product_No\": \"2237\",\n        \"Gendor\": \"women\",\n        \"Size\": \"S\",\n        \"Style\": \"Figures Batman\",\n        \"Price\": 445\n    },\n    {\n        \"Product_No\": \"2238\",\n        \"Gendor\": \"women\",\n        \"Size\": \"S\",\n        \"Style\": \"Figures Iron Man\",\n        \"Price\": 445\n    },\n    {\n        \"Product_No\": \"2239\",\n        \"Gendor\": \"women\",\n        \"Size\": \"S\",\n        \"Style\": \"Figures Spiderman\",\n        \"Price\": 445\n    },\n    {\n        \"Product_No\": \"2311\",\n        \"Gendor\": \"women\",\n        \"Size\": \"M\",\n        \"Style\": \"Plain color Red\",\n        \"Price\": 400\n    },\n    {\n        \"Product_No\": \"2312\",\n        \"Gendor\": \"women\",\n        \"Size\": \"M\",\n        \"Style\": \"Plain color Black\",\n        \"Price\": 400\n    },\n    {\n        \"Product_No\": \"2313\",\n        \"Gendor\": \"women\",\n        \"Size\": \"M\",\n        \"Style\": \"Plain color Green\",\n        \"Price\": 400\n    },\n    {\n        \"Product_No\": \"2324\",\n        \"Gendor\": \"women\",\n        \"Size\": \"M\",\n        \"Style\": \"Patterns dots\",\n        \"Price\": 425\n    },\n    {\n        \"Product_No\": \"2325\",\n        \"Gendor\": \"women\",\n        \"Size\": \"M\",\n        \"Style\": \"Patterns drawing\",\n        \"Price\": 425\n    },\n    {\n        \"Product_No\": \"2326\",\n        \"Gendor\": \"women\",\n        \"Size\": \"M\",\n        \"Style\": \"Patterns calligraphy\",\n        \"Price\": 425\n    },\n    {\n        \"Product_No\": \"2337\",\n        \"Gendor\": \"women\",\n        \"Size\": \"M\",\n        \"Style\": \"Figures Batman\",\n        \"Price\": 470\n    },\n    {\n        \"Product_No\": \"2338\",\n        \"Gendor\": \"women\",\n        \"Size\": \"M\",\n        \"Style\": \"Figures Iron Man\",\n        \"Price\": 470\n    },\n    {\n        \"Product_No\": \"2339\",\n        \"Gendor\": \"women\",\n        \"Size\": \"M\",\n        \"Style\": \"Figures Spiderman\",\n        \"Price\": 470\n    },\n    {\n        \"Product_No\": \"2411\",\n        \"Gendor\": \"women\",\n        \"Size\": \"L\",\n        \"Style\": \"Plain color Red\",\n        \"Price\": 425\n    },\n    {\n        \"Product_No\": \"2412\",\n        \"Gendor\": \"women\",\n        \"Size\": \"L\",\n        \"Style\": \"Plain color Black\",\n        \"Price\": 425\n    },\n    {\n        \"Product_No\": \"2413\",\n        \"Gendor\": \"women\",\n        \"Size\": \"L\",\n        \"Style\": \"Plain color Green\",\n        \"Price\": 425\n    },\n    {\n        \"Product_No\": \"2424\",\n        \"Gendor\": \"women\",\n        \"Size\": \"L\",\n        \"Style\": \"Patterns dots\",\n        \"Price\": 450\n    },\n    {\n        \"Product_No\": \"2425\",\n        \"Gendor\": \"women\",\n        \"Size\": \"L\",\n        \"Style\": \"Patterns drawing\",\n        \"Price\": 450\n    },\n    {\n        \"Product_No\": \"2426\",\n        \"Gendor\": \"women\",\n        \"Size\": \"L\",\n        \"Style\": \"Patterns calligraphy\",\n        \"Price\": 450\n    },\n    {\n        \"Product_No\": \"2437\",\n        \"Gendor\": \"women\",\n        \"Size\": \"L\",\n        \"Style\": \"Figures Batman\",\n        \"Price\": 495\n    },\n    {\n        \"Product_No\": \"2438\",\n        \"Gendor\": \"women\",\n        \"Size\": \"L\",\n        \"Style\": \"Figures Iron Man\",\n        \"Price\": 495\n    },\n    {\n        \"Product_No\": \"2439\",\n        \"Gendor\": \"women\",\n        \"Size\": \"L\",\n        \"Style\": \"Figures Spiderman\",\n        \"Price\": 495\n    },\n    {\n        \"Product_No\": \"2511\",\n        \"Gendor\": \"women\",\n        \"Size\": \"XL\",\n        \"Style\": \"Plain color Red\",\n        \"Price\": 475\n    },\n    {\n        \"Product_No\": \"2512\",\n        \"Gendor\": \"women\",\n        \"Size\": \"XL\",\n        \"Style\": \"Plain color Black\",\n        \"Price\": 475\n    },\n    {\n        \"Product_No\": \"2513\",\n        \"Gendor\": \"women\",\n        \"Size\": \"XL\",\n        \"Style\": \"Plain color Green\",\n        \"Price\": 475\n    },\n    {\n        \"Product_No\": \"2524\",\n        \"Gendor\": \"women\",\n        \"Size\": \"XL\",\n        \"Style\": \"Patterns dots\",\n        \"Price\": 500\n    },\n    {\n        \"Product_No\": \"2525\",\n        \"Gendor\": \"women\",\n        \"Size\": \"XL\",\n        \"Style\": \"Patterns drawing\",\n        \"Price\": 500\n    },\n    {\n        \"Product_No\": \"2526\",\n        \"Gendor\": \"women\",\n        \"Size\": \"XL\",\n        \"Style\": \"Patterns calligraphy\",\n        \"Price\": 500\n    },\n    {\n        \"Product_No\": \"2537\",\n        \"Gendor\": \"women\",\n        \"Size\": \"XL\",\n        \"Style\": \"Figures Batman\",\n        \"Price\": 545\n    },\n    {\n        \"Product_No\": \"2538\",\n        \"Gendor\": \"women\",\n        \"Size\": \"XL\",\n        \"Style\": \"Figures Iron Man\",\n        \"Price\": 545\n    },\n    {\n        \"Product_No\": \"2539\",\n        \"Gendor\": \"women\",\n        \"Size\": \"XL\",\n        \"Style\": \"Figures Spiderman\",\n        \"Price\": 545\n    }\n]"
+				},
+				{
+					"name": "filterProductByStyle",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/products?style=color",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"products"
+							],
+							"query": [
+								{
+									"key": "style",
+									"value": "color",
+									"description": "which input word style "
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 20 Oct 2022 15:41:42 GMT"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"Product_No\": \"1111\",\n        \"Gendor\": \"men\",\n        \"Size\": \"XS\",\n        \"Style\": \"Plain color Red\",\n        \"Price\": 320\n    },\n    {\n        \"Product_No\": \"1112\",\n        \"Gendor\": \"men\",\n        \"Size\": \"XS\",\n        \"Style\": \"Plain color Black\",\n        \"Price\": 320\n    },\n    {\n        \"Product_No\": \"1113\",\n        \"Gendor\": \"men\",\n        \"Size\": \"XS\",\n        \"Style\": \"Plain color Green\",\n        \"Price\": 320\n    },\n    {\n        \"Product_No\": \"2111\",\n        \"Gendor\": \"women\",\n        \"Size\": \"XS\",\n        \"Style\": \"Plain color Red\",\n        \"Price\": 325\n    },\n    {\n        \"Product_No\": \"2112\",\n        \"Gendor\": \"women\",\n        \"Size\": \"XS\",\n        \"Style\": \"Plain color Black\",\n        \"Price\": 325\n    },\n    {\n        \"Product_No\": \"2113\",\n        \"Gendor\": \"women\",\n        \"Size\": \"XS\",\n        \"Style\": \"Plain color Green\",\n        \"Price\": 325\n    },\n    {\n        \"Product_No\": \"1211\",\n        \"Gendor\": \"men\",\n        \"Size\": \"S\",\n        \"Style\": \"Plain color Red\",\n        \"Price\": 370\n    },\n    {\n        \"Product_No\": \"1212\",\n        \"Gendor\": \"men\",\n        \"Size\": \"S\",\n        \"Style\": \"Plain color Black\",\n        \"Price\": 370\n    },\n    {\n        \"Product_No\": \"1213\",\n        \"Gendor\": \"men\",\n        \"Size\": \"S\",\n        \"Style\": \"Plain color Green\",\n        \"Price\": 370\n    },\n    {\n        \"Product_No\": \"2211\",\n        \"Gendor\": \"women\",\n        \"Size\": \"S\",\n        \"Style\": \"Plain color Red\",\n        \"Price\": 375\n    },\n    {\n        \"Product_No\": \"2212\",\n        \"Gendor\": \"women\",\n        \"Size\": \"S\",\n        \"Style\": \"Plain color Black\",\n        \"Price\": 375\n    },\n    {\n        \"Product_No\": \"2213\",\n        \"Gendor\": \"women\",\n        \"Size\": \"S\",\n        \"Style\": \"Plain color Green\",\n        \"Price\": 375\n    },\n    {\n        \"Product_No\": \"1311\",\n        \"Gendor\": \"men\",\n        \"Size\": \"M\",\n        \"Style\": \"Plain color Red\",\n        \"Price\": 395\n    },\n    {\n        \"Product_No\": \"1312\",\n        \"Gendor\": \"men\",\n        \"Size\": \"M\",\n        \"Style\": \"Plain color Black\",\n        \"Price\": 395\n    },\n    {\n        \"Product_No\": \"1313\",\n        \"Gendor\": \"men\",\n        \"Size\": \"M\",\n        \"Style\": \"Plain color Green\",\n        \"Price\": 395\n    },\n    {\n        \"Product_No\": \"2311\",\n        \"Gendor\": \"women\",\n        \"Size\": \"M\",\n        \"Style\": \"Plain color Red\",\n        \"Price\": 400\n    },\n    {\n        \"Product_No\": \"2312\",\n        \"Gendor\": \"women\",\n        \"Size\": \"M\",\n        \"Style\": \"Plain color Black\",\n        \"Price\": 400\n    },\n    {\n        \"Product_No\": \"2313\",\n        \"Gendor\": \"women\",\n        \"Size\": \"M\",\n        \"Style\": \"Plain color Green\",\n        \"Price\": 400\n    },\n    {\n        \"Product_No\": \"1411\",\n        \"Gendor\": \"men\",\n        \"Size\": \"L\",\n        \"Style\": \"Plain color Red\",\n        \"Price\": 420\n    },\n    {\n        \"Product_No\": \"1412\",\n        \"Gendor\": \"men\",\n        \"Size\": \"L\",\n        \"Style\": \"Plain color Black\",\n        \"Price\": 420\n    },\n    {\n        \"Product_No\": \"1413\",\n        \"Gendor\": \"men\",\n        \"Size\": \"L\",\n        \"Style\": \"Plain color Green\",\n        \"Price\": 420\n    },\n    {\n        \"Product_No\": \"2411\",\n        \"Gendor\": \"women\",\n        \"Size\": \"L\",\n        \"Style\": \"Plain color Red\",\n        \"Price\": 425\n    },\n    {\n        \"Product_No\": \"2412\",\n        \"Gendor\": \"women\",\n        \"Size\": \"L\",\n        \"Style\": \"Plain color Black\",\n        \"Price\": 425\n    },\n    {\n        \"Product_No\": \"2413\",\n        \"Gendor\": \"women\",\n        \"Size\": \"L\",\n        \"Style\": \"Plain color Green\",\n        \"Price\": 425\n    },\n    {\n        \"Product_No\": \"1511\",\n        \"Gendor\": \"men\",\n        \"Size\": \"XL\",\n        \"Style\": \"Plain color Red\",\n        \"Price\": 470\n    },\n    {\n        \"Product_No\": \"1512\",\n        \"Gendor\": \"men\",\n        \"Size\": \"XL\",\n        \"Style\": \"Plain color Black\",\n        \"Price\": 470\n    },\n    {\n        \"Product_No\": \"1513\",\n        \"Gendor\": \"men\",\n        \"Size\": \"XL\",\n        \"Style\": \"Plain color Green\",\n        \"Price\": 470\n    },\n    {\n        \"Product_No\": \"2511\",\n        \"Gendor\": \"women\",\n        \"Size\": \"XL\",\n        \"Style\": \"Plain color Red\",\n        \"Price\": 475\n    },\n    {\n        \"Product_No\": \"2512\",\n        \"Gendor\": \"women\",\n        \"Size\": \"XL\",\n        \"Style\": \"Plain color Black\",\n        \"Price\": 475\n    },\n    {\n        \"Product_No\": \"2513\",\n        \"Gendor\": \"women\",\n        \"Size\": \"XL\",\n        \"Style\": \"Plain color Green\",\n        \"Price\": 475\n    }\n]"
+				},
+				{
+					"name": "filterProductBySize",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/products?size=xl",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"products"
+							],
+							"query": [
+								{
+									"key": "size",
+									"value": "xl"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 20 Oct 2022 15:43:47 GMT"
+						},
+						{
+							"key": "Content-Length",
+							"value": "1606"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"Product_No\": \"1511\",\n        \"Gendor\": \"men\",\n        \"Size\": \"XL\",\n        \"Style\": \"Plain color Red\",\n        \"Price\": 470\n    },\n    {\n        \"Product_No\": \"1512\",\n        \"Gendor\": \"men\",\n        \"Size\": \"XL\",\n        \"Style\": \"Plain color Black\",\n        \"Price\": 470\n    },\n    {\n        \"Product_No\": \"1513\",\n        \"Gendor\": \"men\",\n        \"Size\": \"XL\",\n        \"Style\": \"Plain color Green\",\n        \"Price\": 470\n    },\n    {\n        \"Product_No\": \"1524\",\n        \"Gendor\": \"men\",\n        \"Size\": \"XL\",\n        \"Style\": \"Patterns dots\",\n        \"Price\": 495\n    },\n    {\n        \"Product_No\": \"1525\",\n        \"Gendor\": \"men\",\n        \"Size\": \"XL\",\n        \"Style\": \"Patterns drawing\",\n        \"Price\": 495\n    },\n    {\n        \"Product_No\": \"1526\",\n        \"Gendor\": \"men\",\n        \"Size\": \"XL\",\n        \"Style\": \"Patterns calligraphy\",\n        \"Price\": 495\n    },\n    {\n        \"Product_No\": \"1537\",\n        \"Gendor\": \"men\",\n        \"Size\": \"XL\",\n        \"Style\": \"Figures Batman\",\n        \"Price\": 540\n    },\n    {\n        \"Product_No\": \"1538\",\n        \"Gendor\": \"men\",\n        \"Size\": \"XL\",\n        \"Style\": \"Figures Iron Man\",\n        \"Price\": 540\n    },\n    {\n        \"Product_No\": \"1539\",\n        \"Gendor\": \"men\",\n        \"Size\": \"XL\",\n        \"Style\": \"Figures Spiderman\",\n        \"Price\": 540\n    },\n    {\n        \"Product_No\": \"2511\",\n        \"Gendor\": \"women\",\n        \"Size\": \"XL\",\n        \"Style\": \"Plain color Red\",\n        \"Price\": 475\n    },\n    {\n        \"Product_No\": \"2512\",\n        \"Gendor\": \"women\",\n        \"Size\": \"XL\",\n        \"Style\": \"Plain color Black\",\n        \"Price\": 475\n    },\n    {\n        \"Product_No\": \"2513\",\n        \"Gendor\": \"women\",\n        \"Size\": \"XL\",\n        \"Style\": \"Plain color Green\",\n        \"Price\": 475\n    },\n    {\n        \"Product_No\": \"2524\",\n        \"Gendor\": \"women\",\n        \"Size\": \"XL\",\n        \"Style\": \"Patterns dots\",\n        \"Price\": 500\n    },\n    {\n        \"Product_No\": \"2525\",\n        \"Gendor\": \"women\",\n        \"Size\": \"XL\",\n        \"Style\": \"Patterns drawing\",\n        \"Price\": 500\n    },\n    {\n        \"Product_No\": \"2526\",\n        \"Gendor\": \"women\",\n        \"Size\": \"XL\",\n        \"Style\": \"Patterns calligraphy\",\n        \"Price\": 500\n    },\n    {\n        \"Product_No\": \"2537\",\n        \"Gendor\": \"women\",\n        \"Size\": \"XL\",\n        \"Style\": \"Figures Batman\",\n        \"Price\": 545\n    },\n    {\n        \"Product_No\": \"2538\",\n        \"Gendor\": \"women\",\n        \"Size\": \"XL\",\n        \"Style\": \"Figures Iron Man\",\n        \"Price\": 545\n    },\n    {\n        \"Product_No\": \"2539\",\n        \"Gendor\": \"women\",\n        \"Size\": \"XL\",\n        \"Style\": \"Figures Spiderman\",\n        \"Price\": 545\n    }\n]"
+				},
+				{
+					"name": "filterProduct",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/products?gendor=women&style=fig&size=xl",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"products"
+							],
+							"query": [
+								{
+									"key": "gendor",
+									"value": "women"
+								},
+								{
+									"key": "style",
+									"value": "fig"
+								},
+								{
+									"key": "size",
+									"value": "xl"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 20 Oct 2022 15:44:44 GMT"
+						},
+						{
+							"key": "Content-Length",
+							"value": "271"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"Product_No\": \"2537\",\n        \"Gendor\": \"women\",\n        \"Size\": \"XL\",\n        \"Style\": \"Figures Batman\",\n        \"Price\": 545\n    },\n    {\n        \"Product_No\": \"2538\",\n        \"Gendor\": \"women\",\n        \"Size\": \"XL\",\n        \"Style\": \"Figures Iron Man\",\n        \"Price\": 545\n    },\n    {\n        \"Product_No\": \"2539\",\n        \"Gendor\": \"women\",\n        \"Size\": \"XL\",\n        \"Style\": \"Figures Spiderman\",\n        \"Price\": 545\n    }\n]"
+				}
+			]
+		}
+	]
+}
